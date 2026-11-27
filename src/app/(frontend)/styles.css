@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  --color-p100: #f0fdfa;
+  --color-p200: #ccfbf1;
+  --color-p300: #99f6e4;
+  --color-p400: #5eead4;
+  --color-p500: #0d9488;
+  --color-p600: #08776f;
+  --color-p700: #115e59;
+  --color-p800: #104b48;
+  --color-p900: #103836;
+  --color-g100: #e8f7ef;
+  --color-g200: #bfe8cf;
+  --color-g300: #6fd39a;
+  --color-g400: #1fcf6e;
+  --color-g500: #0b4726;
+  --color-ink: #1f2937;
+  --color-muted: #667480;
+  --color-line: #e2eae9;
+  --color-canvas: #f5f8f8;
+  --shadow-panel: 0 2px 6px rgb(17 63 58 / 0.035);
+  --text-display: 2rem;
+  --text-hero: 2.5rem;
+}
+
+@layer base {
+  body {
+    @apply bg-canvas font-sans text-ink antialiased;
+  }
+  button:not(:disabled),
+  select:not(:disabled) {
+    cursor: pointer;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-p500);
+    outline-offset: 3px;
+  }
+}
+
+.figma-custom-code-fragment {
+  display: contents;
+}
+
+.figma-bypass-link {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 2147483647;
+  transform: translateY(-150%);
+  border-radius: 6px;
+  background: #111827;
+  color: #fff;
+  padding: 8px 12px;
+  font:
+    600 14px/1.2 system-ui,
+    sans-serif;
+  text-decoration: none;
+}
+
+.figma-bypass-link:focus {
+  transform: translateY(0);
+}

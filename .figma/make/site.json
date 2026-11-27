@@ -1,0 +1,10 @@
+{
+  "description": "A digital Posyandu platform for health workers and families to manage visit schedules, track child growth and nutrition, and export monthly reports.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
